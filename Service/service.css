@@ -1,32 +1,172 @@
-.card{
-    perspective: 150rem;
-    height: 510px;
-    width: 200px;
-    position: relative;
+*{
+    margin: 0%;
 }
 
-.card__side__front{
+.card-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card{
     position: absolute;
     top:0;
     left:0;
-    background-color: aqua;
+    perspective: 150rem;
+    height: 60vh;
+    width: 25vw;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid rgba(166, 166, 166, 0.197);
+}
+
+.card-2{
+    position: absolute;
+    top:0;
+    perspective: 150rem;
+    height: 60vh;
+    width: 25vw;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid rgba(166, 166, 166, 0.197);
+}
+
+.card-3{
+    position: absolute;
+    top:0;
+    perspective: 150rem;
+    height: 60vh;
+    width: 25vw;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid rgba(166, 166, 166, 0.197);
+}
+
+.card__side__front{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 254, 254);
     transition: all .3s;
     height: 100%;
     width:100%;
     backface-visibility: hidden;
 }
+
+
+.card .card__side__front .front-top{
+    width:100%;
+    height: 60%;
+    background-image:  url(../Images/maldives.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+.card .card__side__front .front-bottom{
+    width:100%;
+    height: 40%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.card-2 .card__side__front .front-top{
+    width:100%;
+    height: 60%;
+    background-image:  url(../Images/panama.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+.card-2 .card__side__front .front-bottom{
+    width:100%;
+    height: 40%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.card-3 .card__side__front .front-top{
+    width:100%;
+    height: 60%;
+    background-image:  url(../Images/mauritius.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+.card-3 .card__side__front .front-bottom{
+    width:100%;
+    height: 40%;
+    text-align: center;
+    font-family: cursive;
+}
+
 
 .card__side__back{
     position: absolute;
     top:0;
     left:0;
-    background-color: rgb(27, 15, 86);
     transition: all .3s;
     height: 100%;
     width:100%;
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
+
+.card .card__side__back{
+    background-image: linear-gradient(to right bottom, rgba(231, 249, 129, 0.856), rgba(4, 77, 106, 0.808)), url(../Images/maldives.jpg);
+}
+
+.card-2 .card__side__back{
+    background-image: linear-gradient(to right bottom, rgba(34, 187, 42, 0.856), rgba(176, 14, 144, 0.808)), url(../Images/panama.jpg);
+}
+
+.card-3 .card__side__back{
+    background-image: linear-gradient(to right bottom, rgba(183, 185, 174, 0.856), rgba(245, 238, 108, 0.808)), url(../Images/mauritius.jpg);
+}
+
+
+.card__side__back .primary-text{
+    font-size: 900;
+    font-weight: bolder;
+}
+.card__side__back .primary-text span{
+    font-size: medium;
+}
+
+.card__side__back .book-now{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    font-family: cursive;
+    width: 40%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.card__side__back .book-now:hover{
+    transform: scale(1.2);
+}
+
+
 
 
 .card:hover .card__side__front{
@@ -36,3 +176,230 @@
 .card:hover .card__side__back{
     transform: rotateY(0);
 }
+
+.card-2:hover .card__side__front{
+    transform: rotateY(180deg);
+}
+
+.card-2:hover .card__side__back{
+    transform: rotateY(0);
+}
+
+.card-3:hover .card__side__front{
+    transform: rotateY(180deg);
+}
+
+.card-3:hover .card__side__back{
+    transform: rotateY(0);
+}
+
+
+
+@keyframes openUp {
+    0%{
+        height: 50vh;
+    }
+    100%{
+        height: 10vh;
+    }
+}
+
+
+@keyframes openDown {
+    0%{
+        height: 50vh;
+    }
+    100%{
+        height: 0vh;
+    }
+}
+
+
+
+@keyframes openRight {
+    0%{
+        width:50vw;
+    }
+    100%{
+        width: 0vw;
+    }
+}
+
+@keyframes moveFromLeft {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.upperscreen{
+    animation-name: openUp;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position: absolute;
+    top: 0;
+    height:50vh;
+    width: 100vw;
+    background-color: rgba(191, 113, 159, 0.999);
+    z-index: 100;
+}
+
+.lowerscreen{
+    animation-name: openDown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    bottom: 0;
+    height:30vh;
+    width: 100vw;
+    background-color: rgb(109, 154, 171);
+    z-index: 100;
+}
+
+.upperscreen{
+    animation-name: openUp;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position: absolute;
+    top: 0;
+    height:30vh;
+    width: 100vw;
+    background-color: rgba(191, 113, 159, 0.999);
+    z-index: 100;
+}
+
+.leftscreen{
+    animation-name: openRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 30vh;
+    left:0;
+    height:40vh;
+    width: 50vw;
+    background-color: rgb(142, 226, 146);
+    z-index: 100;
+}
+.rightscreen{
+    animation-name: openRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top:30vh;
+    right:0;
+    height:40vh;
+    width: 50vw;
+    background-color: rgb(18, 112, 126);
+    z-index: 100;
+}
+.navigation{
+    position: absolute;
+    top:0;
+    height: 10vh;
+    width: 100vw;
+    z-index: 99;
+    background-color: rgba(191, 113, 159, 0.626);
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.navigation ul li{
+    transition: all 3s;
+    animation-name: moveFromLeft;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    float: right;
+    width:fit-content;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 2.5vh;
+    padding: 0.5vw;
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(10, 115, 62); 
+}
+
+.navigation ul li:hover{
+    transform: scale(1.1);
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(109, 154, 171);
+}
+
+.navigation ul .active{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(232, 183, 199, 0.426);
+}
+
+.navigation ul .active a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#mobile-nav{
+    display: none;
+}
+.navigation-mobile{
+    display: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navigation ul li{
+        display: none;
+    }
+    .navigation-mobile{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 8vw;
+        height: 8vh;
+        background-color: aliceblue;
+        border-radius: 50%;
+        transition: all .5s;
+        display: block;
+    }
+
+    .navigation-mobile ~svg{
+        transform: translate(50%,50%);
+        background-color: aqua;
+    }
+
+    #mobile-nav:checked ~.navigation-mobile{
+        background-color: rgb(209, 222, 222);
+        width: 100vh;
+        height: 100vh;
+        border-radius: 0%;
+    }
+
+    #mobile-nav:checked ~.navigation-mobile ~ul li{
+        display: block;
+        float: none;
+    }
+
+    .heading-primary-main{
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 20px;
+    }
+    
+    .heading-primary-sub{
+        display: block;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+  }

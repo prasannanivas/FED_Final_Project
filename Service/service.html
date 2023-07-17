@@ -7,14 +7,107 @@
     <link rel="stylesheet" href="service.css">
 </head>
 <body>
+
+    <div class="upperscreen">
+        <nav class="navigation">
+            <input type="checkbox" id = "mobile-nav" />
+            <label class = "navigation-mobile" for="mobile-nav">
+                <svg width="5vh" height="5vh" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <ul>
+                <li><a href = "./About/about.html">About</a></li>
+                <li><a href = "./Contact/contact.html">Contact</a></li>
+                <li class = "active"><a href = "./Service/service.html">Service</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="lowerscreen"></div>
+    <div class="leftscreen"></div>
+    <div class="rightscreen"></div>
+
+
+    <div class="card-container">
+        <div class="card">
+
+            <div class="card__side__front">
+                <div class="front-top">
+
+                </div>
+                <div class="front-bottom">
+                    <h1 class="primary-text">
+                        Maldives
+                    </h1>
+                    <h3 class="secondary-text">
+                        5 Days 6 Nights
+                    </h3>
+                </div>
+            </div>
+
+            <div class="card__side__back">
+                <h1 class="primary-text">
+                    $783
+                </h1>
+                <button class = "book-now">
+                    Book Now!
+                </button>
+            </div>
+        </div>
     
-    <div class="card">
-        <div class="card__side__front">
-            Front
+        <div class="card-2">
+            <div class="card__side__front">
+                <div class="front-top">
+
+                </div>
+                <div class="front-bottom">
+                    <h1 class="primary-text">
+                        Panama
+                    </h1>
+                    <h3 class="secondary-text">
+                        4 Days 5 Nights
+                    </h3>
+                </div>
+            </div>
+            <div class="card__side__back">
+                <h1 class="primary-text">
+                    <span class="old-price">
+                        <del>$1897</del>
+                    </span>
+                    $999
+                </h1>
+                <button class = "book-now">
+                    Book Now!
+                </button>
+            </div>
         </div>
-        <div class="card__side__back">
-            Back
+    
+        <div class="card-3">
+            <div class="card__side__front">
+                <div class="front-top">
+
+                </div>
+                <div class="front-bottom">
+                    <h1 class="primary-text">
+                        Mauritius
+                    </h1>
+                    <h3 class="secondary-text">
+                        8 Days 9 Nights
+                    </h3>
+                </div>
+            </div>
+            <div class="card__side__back">
+                <h1 class="primary-text">
+                    $1737
+                </h1>
+                <button class = "book-now">
+                    Book Now!
+                </button>
+            </div>
         </div>
+
     </div>
 </body>
 </html>
