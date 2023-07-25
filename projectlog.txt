@@ -1,0 +1,34 @@
+Idea: Follow the instructions given to plan a new website.
+
+- Purpose of the website — The purpose of a commercial business website is related to the goal of selling products or services
+- Target Audience — The people who use the website are known as the target audience
+Knowing their general demographic background will help to design a website appropriate for them
+- Multiplatform Display —A responsive design of a website must be created that provides an optimal viewing experience across a range of devices
+
+1. Understanding business and application requirements.
+2. Create sitemap.
+2. Make wireframes.
+3. Create mock webpages from the wireframes.
+4. Develop webpages with styles.
+
+Link to Project Kanban: 
+
+https://trello.com/invite/b/EUrYP2uX/ATTI6d28bd0d60fa291e1d00e7d68a8831ebB2931489/fed-final-project
+
+
+Date        Name    Task
+03-07-2023  Harsha  Web application planning and requirement.
+03-07-2023  Prasanna Research on CSS styling.
+03-07-2023  Sharath Research on sitemaps.
+03-07-2023  Karthik Research on tools for making wireframes
+
+10-07-2023  Harsha & Sharath  Creating Sitemap and user-flow diagram.
+10-07-2023  Prasanna Research on Responsive Style Designing.
+10-07-2023  Karthik Designing wireframes.
+
+17-07-2023  Sharath Prepared the sitemap.
+17-07-2023  Harsha & Karthik Prepared a wireframe for the homepage.
+17-07-2023  Prasanna Research on implementing flip-able images on hover.
+
+
+
