@@ -1,0 +1,46 @@
+#chat-icon{
+    visibility: hidden;
+}
+
+.chat-support{
+    position: relative;
+}
+
+#chat-label{
+    position: fixed;
+    bottom: 5%;
+    left: 8%;
+    transform: translate(-100%, -100%);
+    transition: all 0.3s;
+}
+
+#chat-label img{
+width: 40px;
+}
+
+
+#chat-icon:checked ~.chat-box{
+    visibility: visible;
+    transform: scale3d(1.1);
+}
+
+.chat-box{
+    visibility: hidden;
+    width: 20vw;
+    height: 40vh;
+    background-color: rgba(240, 233, 233, 0.578);
+    box-shadow: 20px;
+    border-radius: 20px;
+    padding: 2%;
+    position: fixed;
+    bottom: 5%;
+    left: 8%;
+
+}
+
+.chat-box input{
+    position: relative;
+    top:30vh;
+    height: 7vh;
+}
+
