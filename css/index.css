@@ -111,7 +111,7 @@
     top: 10vh;
     height: 75vh;
     width: 90%;
-    background-image: linear-gradient(to right bottom, rgba(217, 255, 1, 0.856), rgba(0, 89, 255, 0.808)), url(./Images/header-img.jpg);
+    background-image: linear-gradient(to right bottom, rgba(217, 255, 1, 0.856), rgba(0, 89, 255, 0.808)), url(../img/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
