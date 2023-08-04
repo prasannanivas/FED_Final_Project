@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+width: 100vw;
+height: 100vh;
+background-image: url(../../img/Travel.jpg);
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items:flex-end;
+justify-content: center;
+}
+
+
+.header-content{
+	margin-bottom: 70px;
+	color: black;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.content .card{
+    transition: all 0.3s;
+}
+.content .card:hover{
+	 transform: scale(1.1);
+    cursor: pointer;
+}
+.container .content .card h1{
+	font-size: 1vmin;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: serif;		
+}
+
+
+.header-content h1{
+	font-size: 4vmin;
+	font-family: serif;
+	text-decoration-color: black;
+	font-weight: bold;
+}
+
+.header-content h2{
+	font-size: 4vmin;
+	font-family: serif;
+}
+
+
+
+.ctn{
+   padding: 8px 15px;
+   background: #fc036b;
+   border-radius: 30px;
+   color: whitesmoke;
+}
+.line{
+	width: 150px;
+	height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.container{
+	width: 100%;
+}
+
+.container .content {
+	width: 100%;
+	margin: auto;
+}
+
+
+
+.container .content .card h1{
+	padding-top: 30px;
+	font-size: 35px;
+	color: #e19c30;
+}
+
+.container .content .card p{
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #6e6e6e;
+}
+
+.container .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+}
+
+.content .card{
+	flex:1;
+	margin: 50px 40px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+.content .card img{
+    width: 100%;
+    height: auto;	
+}
+
+.content .card h4{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.content .card p{
+	font-size: 15px;
+	color: #6e6e6e;
+	line-height: 1.5;
+	padding: 10px;
+}
+@media screen and (max-width: 768px)
+{
+  .content {
+  	flex-direction: column;
+  }	
+}
