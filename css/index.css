@@ -151,7 +151,77 @@
     letter-spacing: 10px;
 }
 
+.reviews{
+    position: relative;
+    top:95vh;
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(6, 28, 47);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+}
 
+.reviews h1{
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.review-card-1{
+    position: sticky;
+    display: flex;
+    top:20vh;
+    height: 40vh;
+    width: 50vw;
+    background-color: rgb(99, 80, 6);
+    margin-bottom: 10vh;
+}
+
+.review-card-2{
+    display: flex;
+    position: sticky;
+    top:23vh;
+    height: 40vh;
+    width: 50vw;
+    background-color: rgb(6, 108, 36);
+    margin-bottom: 10vh;
+    transform: skewX(6deg)
+}
+
+.review-card-3{
+    display: flex;
+    position: sticky;
+    top:26vh;
+    height: 40vh;
+    width: 50vw;
+    background-color: rgb(224, 113, 69);
+    transform: skewX(-6deg);
+}
+
+.review-image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-image img{
+   
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.review-content{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    font-family: cursive;
+    color: aliceblue;
+}
 
 
 
@@ -200,6 +270,18 @@
         font-size: 10px;
         font-weight: 600;
         letter-spacing: 5px;
+    }
+
+    .review-card-1{
+        width: 80%;
+    }
+    
+    .review-card-2{
+        width: 80%;
+    }
+    
+    .review-card-3{
+        width: 80%;
     }
 
   }
