@@ -58,7 +58,7 @@
 .card .card__side__front .front-top{
     width:100%;
     height: 60%;
-    background-image:  url(../../img/maldives.jpg);
+    background-image:  url(../Images/maldives.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -76,7 +76,7 @@
 .card-2 .card__side__front .front-top{
     width:100%;
     height: 60%;
-    background-image:  url(../../img/mauritius.jpg);
+    background-image:  url(../Images/panama.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -94,7 +94,7 @@
 .card-3 .card__side__front .front-top{
     width:100%;
     height: 60%;
-    background-image:  url(../../img/panama.jpg);
+    background-image:  url(../Images/mauritius.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
