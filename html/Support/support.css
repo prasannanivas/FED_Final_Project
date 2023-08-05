@@ -21,22 +21,32 @@ width: 40px;
 
 #chat-icon:checked ~.chat-box{
     visibility: visible;
-    transform: scale3d(1.1);
+    opacity: 1;
+    width: 20vw;
+    height: 40vh;
 }
 
 .chat-box{
-    visibility: hidden;
-    width: 20vw;
-    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    width: 0;
+    height: 0;
     background-color: rgba(7, 84, 101, 0.966);
     box-shadow: 5px 5px 5px 5px rgba(136, 139, 145, 0.58);
     border-radius: 20px;
     padding: 2%;
     position: fixed;
+    transition: all 0.5s;
     bottom: 5%;
     left: 8%;
-
 }
+.chat-box input{
+    height: fit-content;
+    margin: 2%;
+    
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -225,6 +235,8 @@ iframe.headerBlog{
     .addressCSS{
         flex-direction: column;
     }
+
+    
 }    
 /*Desktop view css*/
 @media screen and (min-width:769px){
@@ -233,5 +245,18 @@ iframe.headerBlog{
     }  
     iframe.footerBlog{
         height: 70px;
+    }
+}
+
+@media screen and (max-width:481px){
+
+    #chat-icon:checked ~.chat-box{
+        visibility: visible;
+        opacity: 1;
+        width: 60vw;
+        height: 40vh;
+    }
+    .bodyCSS{
+        padding: 0%;
     }
 }
